@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Style+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'MonteCarlo', sans-serif;
+    background-image: url(../Images/manoj-kumar-kasirajan-Lz9-JS0OtFQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #40221B;
+}
+
+h1{
+    font-size: 6rem;
+    margin-top: -15rem;
+}
+
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown-el span{
+    font-size: 3rem;
+    text-shadow: 0 0 3px #402722, 0 0 5px #402722;
+}
+
+.countdown-el {
+    text-align: center;
+}

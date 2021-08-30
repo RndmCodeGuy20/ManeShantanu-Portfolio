@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    margin: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.quiz-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+ul li{
+    font-size: 1rem;
+    margin: 1.1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-color: #FF4A8D;
+    border: none;
+    color: white;
+    display: block;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+button:hover{
+    background-color: #C543E6;
+}
