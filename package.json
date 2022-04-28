@@ -1,0 +1,24 @@
+{
+  "name": "mane-shantanu",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RndmCodeGuy20/Portfolio-Website.git"
+  },
+  "author": "Shantanu Mane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RndmCodeGuy20/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/RndmCodeGuy20/Portfolio-Website#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.0",
+    "request": "^2.88.2"
+  }
+}
