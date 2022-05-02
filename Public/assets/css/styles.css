@@ -631,7 +631,8 @@ span,p{
 }
 
 .qualification__button:hover {
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: var(--first-color-alt);
 }
 
 .qualification__icon {
@@ -654,7 +655,7 @@ span,p{
 .qualification__left {
   /* font-size: var(--normal-font-size);
   font-weight: var(--font-medium); */
-  padding-left: 150px;
+  /* padding-left: 80px; */
 }
 
 .qualification__subtitle {
@@ -690,6 +691,7 @@ span,p{
 
 .qualification__active[data-content] {
   display: block;
+  color: var(--text-color);
 }
 
 .qualification__button.qualification__active {
