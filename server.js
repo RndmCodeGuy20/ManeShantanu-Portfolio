@@ -14,5 +14,5 @@ app.get("/", function (req, res) {
 app.set("port", process.env.PORT || 3000);
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log("Server started on port : " + app.get("port"));
+  console.log("Server started on http://127.0.0.1:3000");
 });

@@ -466,11 +466,15 @@ span,p{
 
 .skills__title {
   font-size: var(--mb-0-75);
+  margin-left: 10px;
 }
 
 .skills__subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-top: -5px;
 }
 
 .skills__arrow {
@@ -506,6 +510,7 @@ span,p{
 .skills__list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .skills__titles {
@@ -547,48 +552,48 @@ span,p{
   width: 65%;
 }
 
-.skills__react {
+.skills__vue {
   width: 40%;
 }
 
-.skills__sql {
+.skills__pandas {
+  width: 60%;
+}
+
+.skills__plt {
   width: 40%;
 }
 
-.skills__javad {
-  width: 30%;
+.skills__sns {
+  width: 65%;
 }
 
-.skills__r {
-  width: 25%;
-}
-
-.skills__python {
+.skills__soup {
   width: 60%;
 }
 
 .skills__figma {
-  width: 70%;
+  width: 60%;
 }
 
 .skills__xd {
-  width: 70%;
+  width: 40%;
 }
 
 .skills__photo {
-  width: 60%;
-}
-
-.skills__tkinter{
-  width: 50%;
-}
-
-.skills__java{
   width: 30%;
 }
 
-.skills__cpp{
+.skills__tkinter{
   width: 60%;
+}
+
+.skills__java{
+  width: 50%;
+}
+
+.skills__cpp{
+  width: 70%;
 }
 
 .skills__vue{
@@ -609,7 +614,9 @@ span,p{
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+  transition: 0.3s ease-in-out;
 }
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
