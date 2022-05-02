@@ -1077,44 +1077,46 @@
           </div>
 
           <form
-            action="mailto:shantanu.mane.200@protonmail.com?User Data"
+            action="/thankyou"
             method="POST"
-            enctype="text/plain"
-            aria-disabled="true"
             class="contact__form grid"
+            id="contactform"
           >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input type="text" class="contact__input" name="Name" />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">E-mail</label>
-                <input type="email" class="contact__input" />
+                <input type="email" class="contact__input" name="email" />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input" />
+                <input type="text" class="contact__input" name="project" />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Message</label>
                 <textarea
-                  name=""
+                  form="contactform"
                   id=""
                   cols="0"
                   rows="7"
                   class="contact__input"
+                  name="msg"
                 ></textarea>
               </div>
 
-              <div onclick="sendEmail">
-                <a
-                  class="button button--flex mailto submit"
-                  href="mailto:shantanu.mane.200@protonmail.com"
-                >
+              <!-- <div>
+                <a class="button button--flex" href="/" type="submit">
                   Send Message
                   <i class="uil uil-message button__icon"></i>
                 </a>
+              </div> -->
+              <div>
+                <button type="submit" class="button button--flex button-submit">
+                  Send Message <i class="uil uil-message button__icon"></i>
+                </button>
               </div>
             </div>
           </form>

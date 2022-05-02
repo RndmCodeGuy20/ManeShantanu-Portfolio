@@ -362,6 +362,27 @@ span,p{
   font-weight: var(--font-medium);
 }
 
+input[type=button]{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button-submit {
+  display: inline-block;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  font-size: 1.05rem;
+  font-family: 'Poppins', sans-serif;
+}
+
 .button:hover {
   background-color: var(--first-color-alt);
 }
