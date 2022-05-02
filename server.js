@@ -4,14 +4,15 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const sqlite3 = require("sqlite3");
 const fs = require("fs");
+// const { MongoClient } = require("mongodb");
 
 const app = express();
 
 app.use(express.static("Public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var data = fs.readFileSync("./database/data.json");
-var jsonObj = JSON.parse(data);
+// var data = fs.readFileSync("./database/data.json");
+// var jsonObj = JSON.parse(data);
 
 // var db = new sqlite3.Database("./database/contactInfo.db");
 // db.run(
