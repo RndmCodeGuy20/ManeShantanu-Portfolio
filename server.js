@@ -3,9 +3,12 @@ const request = require("request");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/MessageDB", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  "mongodb+srv://RndmCodeGuy20:Iop3nE9K0Sxh2kmD@cluster0.dhqnu.mongodb.net/MessageDB",
+  {
+    useNewUrlParser: true,
+  }
+);
 
 const personSchema = new mongoose.Schema({
   name: String,
