@@ -30,7 +30,6 @@ app.get("/thankyou", function (req, res) {
 });
 
 app.post("/thankyou", function (req, res) {
-
   const person = new Person({
     name: req.body.Name,
     email: req.body.email,
