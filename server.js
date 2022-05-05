@@ -11,8 +11,20 @@ mongoose.connect(
 );
 
 const personSchema = new mongoose.Schema({
-  name: String,
-  email: String,
+  name: {
+    type: String,
+    required: [true, "User email ID required"],
+  },
+  email: {
+    type: String,
+    validate: {
+      validator: function (v) {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
+      },
+      message: (props) => `${props.value} is not a valid email ID!`,
+    },
+    required: [true, "User email ID required"],
+  },
   project: String,
   message: String,
 });
@@ -32,6 +44,10 @@ app.get("/thankyou", function (req, res) {
   res.sendFile(__dirname + "/thankyou.html");
 });
 
+app.get("/warning", function (req, res) {
+  res.sendFile(__dirname + "/warning.html");
+});
+
 app.post("/thankyou", function (req, res) {
   const person = new Person({
     name: req.body.Name,
@@ -40,9 +56,13 @@ app.post("/thankyou", function (req, res) {
     message: req.body.msg,
   });
 
-  person.save();
-
-  res.sendFile(__dirname + "/thankyou.html");
+  person.save(function (err) {
+    if (err) {
+      res.sendFile(__dirname + "/warning.html");
+    } else {
+      res.sendFile(__dirname + "/thankyou.html");
+    }
+  });
 });
 
 // console.log(__dirname + "/Countdown Timer/index.html");
