@@ -56,3 +56,7 @@ Shantanu Mane
 ## License
 
 This project is currently not licensed under any legal term.
+
+### 💀 Update : 
+
+Github pages is now not available!
