@@ -13,7 +13,7 @@ mongoose.connect(
 const personSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "User email ID required"],
+    required: [true, "User name required"],
   },
   email: {
     type: String,
@@ -65,11 +65,8 @@ app.post("/thankyou", function (req, res) {
   });
 });
 
-// console.log(__dirname + "/Countdown Timer/index.html");
-
 app.get("/Countdown", function (req, res) {
   res.sendFile(__dirname + "/Countdown Timer/index.html");
-  // console.log(__dirname + "/Countdown Timer/index.html");
 });
 
 app.get("/Quiz", function (req, res) {
