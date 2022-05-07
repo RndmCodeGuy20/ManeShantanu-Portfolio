@@ -148,7 +148,8 @@ img {
   padding: 2rem 0 4rem;
 }
 
-span,p{
+span,
+p {
   color: var(--text-color-light);
 }
 
@@ -368,7 +369,7 @@ span,p{
   font-weight: var(--font-medium);
 }
 
-input[type=button]{
+input[type="button"] {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -386,7 +387,7 @@ input[type=button]{
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   font-size: 1.05rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .button:hover {
@@ -603,28 +604,60 @@ input[type=button]{
   width: 60%;
 }
 
-.skills__xd {
+.skills__kt {
   width: 40%;
 }
 
-.skills__photo {
+.skills__flt {
   width: 30%;
 }
 
-.skills__tkinter{
+.skills__tf {
+  width: 30%;
+}
+
+.skills__mg {
+  width: 45%;
+}
+
+.skills__keras {
+  width: 25%;
+}
+
+.skills__tkinter {
   width: 60%;
 }
 
-.skills__java{
-  width: 50%;
+.skills__java {
+  width: 60%;
 }
 
-.skills__cpp{
+.skills__node {
+  width: 60%;
+}
+
+.skills__dj {
+  width: 55%;
+}
+
+.skills__mon {
+  width: 40%;
+}
+
+.skills__sql {
+  width: 65%;
+}
+
+.skills__cpp {
   width: 70%;
 }
 
-.skills__vue{
+.skills__vue {
   width: 30%;
+}
+
+.skills__dsa {
+  width: 50%;
 }
 
 .skills__close .skills__list {
@@ -914,7 +947,7 @@ input[type=button]{
   justify-self: center;
 }
 
-.project__img{
+.project__img {
   height: 460px;
   align-self: center;
 }
@@ -1237,7 +1270,7 @@ input[type=button]{
   }
 
   .qualification__sections {
-    grid-template-columns: .5fr;
+    grid-template-columns: 0.5fr;
   }
 
   .services__container {

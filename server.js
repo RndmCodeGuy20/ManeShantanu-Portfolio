@@ -77,6 +77,10 @@ app.get("/Notes", function (req, res) {
   res.sendFile(__dirname + "/Notes App/index.html");
 });
 
+app.get("/Quote", function (req, res) {
+  res.sendFile(__dirname + "/Random-Quote-Generator/index.html");
+});
+
 app.set("port", process.env.PORT || 3000);
 
 app.listen(process.env.PORT || 3000, function () {
