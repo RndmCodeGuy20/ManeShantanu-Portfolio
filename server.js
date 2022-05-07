@@ -67,10 +67,18 @@ app.post("/thankyou", function (req, res) {
 
 // console.log(__dirname + "/Countdown Timer/index.html");
 
-// app.get("/Countdown%20Timer/", function (req, res) {
-//   res.sendFile(__dirname + "/Countdown Timer/index.html");
-//   console.log(__dirname + "/Countdown Timer/index.html");
-// });
+app.get("/Countdown", function (req, res) {
+  res.sendFile(__dirname + "/Countdown Timer/index.html");
+  // console.log(__dirname + "/Countdown Timer/index.html");
+});
+
+app.get("/Quiz", function (req, res) {
+  res.sendFile(__dirname + "/Quiz App/index.html");
+});
+
+app.get("/Notes", function (req, res) {
+  res.sendFile(__dirname + "/Notes App/index.html");
+});
 
 app.set("port", process.env.PORT || 3000);
 

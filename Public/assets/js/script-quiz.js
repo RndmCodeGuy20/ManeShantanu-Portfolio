@@ -16,7 +16,8 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "Grand Central Terminal, Park Avenue, New York is the world's ________?",
+    question:
+      "Grand Central Terminal, Park Avenue, New York is the world's ________?",
     a: "Highest railway station",
     b: "Longest railway station",
     c: "Largest railway station",
@@ -32,7 +33,8 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "Corey Anderson who has hit the fastest ODI century in 36 balls is from?",
+    question:
+      "Corey Anderson who has hit the fastest ODI century in 36 balls is from?",
     a: "England",
     b: "Australia",
     c: "West Indies",
