@@ -1,37 +1,35 @@
-# Project Title
+# [Portfolio Website](https://maneshantanu.herokuapp.com/)
 
-Simple overview of use/purpose.
+Fullstack portfolio website
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+A fullstack portfolio website with frontend in HTML, CSS and JS and backend designed with node, redux and mongodb.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* NA
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* NA
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## [Portfolio Website](https://maneshantanu.herokuapp.com/)
-
-Hope you all like it.
+* fork the repo
+* clone into your local machine
+* run the following command
 ```
 node server.js
 ```
+
+## Help
+
+How to run the program
+* You can either clone it locally
+* Or you can go to https://maneshantanu.herokuapp.com/
 
 ## Authors
 
