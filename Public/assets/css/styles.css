@@ -7,8 +7,10 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 150; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-  --hue-color-warning: 10; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 150;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color-warning: 10;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* Warning colors */
   --first-color-warning: hsl(var(--hue-color-warning), 69%, 61%);
@@ -87,6 +89,7 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
   display: flex;
@@ -103,6 +106,7 @@ body.dark-theme {
 .change-theme:hover {
   color: var(--first-color);
 }
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -188,6 +192,7 @@ p {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+
 /*==================== NAV ====================*/
 .nav {
   max-width: 968px;
@@ -264,18 +269,22 @@ p {
 .nav__close:hover {
   color: var(--first-color-alt);
 }
+
 /* show menu */
 .show-menu {
   bottom: 0;
 }
+
 /* Active link */
 .active-link {
   color: var(--first-color);
 }
+
 /* Change background header */
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
@@ -467,7 +476,13 @@ input[type="button"] {
 
 .about__buttons {
   display: flex;
+  transition: 0.3s ease-out;
   justify-content: center;
+}
+
+.about__buttons:hover {
+  transform: translateY(0.25rem);
+  transition: 0.3s ease-in-out;
 }
 
 /*==================== SKILLS ====================*/
@@ -545,6 +560,7 @@ input[type="button"] {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  transition: 0.3s;
 }
 
 .skills__name {
@@ -669,7 +685,11 @@ input[type="button"] {
 .skills__open .skills__list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.skills__content {
+  transition: width 0.3s;
 }
 
 .skills__open .skills__arrow {
@@ -903,7 +923,7 @@ input[type="button"] {
   right: -0.5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets {
   bottom: -2.5rem;
 }
 
@@ -1079,10 +1099,12 @@ input[type="button"] {
   font-size: 1.5rem;
   color: #fff;
 }
+
 /* Show scroll */
 .show-scroll {
   bottom: 5rem;
 }
+
 /*========== SCROLL BAR ==========*/
 
 ::-webkit-scrollbar {
@@ -1145,6 +1167,7 @@ input[type="button"] {
     width: 200px;
   }
 }
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
@@ -1339,8 +1362,10 @@ input[type="button"] {
     margin-top: 4.5rem;
   }
 }
+
 /* For large devices */
 @media screen and (min-width: 1024px) {
+
   .header,
   .main,
   .footer__container {
@@ -1375,7 +1400,7 @@ input[type="button"] {
     left: -3.5rem;
   }
 
-  .swiper-container-horizontal > .swiper-pagination-bullets {
+  .swiper-container-horizontal>.swiper-pagination-bullets {
     bottom: -4.5rem;
   }
 
