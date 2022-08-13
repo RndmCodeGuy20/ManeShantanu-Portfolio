@@ -5,7 +5,7 @@ Fullstack portfolio website
 ## Description
 
 A fullstack portfolio website with frontend in HTML, CSS and JS and backend designed with node, redux and mongodb.
-
+![Portfolio Website!](Public/assets/img/pika-2022-08-13T06_13_13.887Z.png)
 ## Getting Started
 
 ### Dependencies
